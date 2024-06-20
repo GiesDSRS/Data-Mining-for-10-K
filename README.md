@@ -24,9 +24,9 @@ pip install sec_edgar_downloader pandas beautifulsoup4 lxml html5lib
 
 
 
-Usage
+### Usage
 
-1. Setup Directory and Download 10-Ks:
+## 1. Setup Directory and Download 10-Ks:
 
 The script first sets up a directory to store downloaded 10-K files and then uses the SEC EDGAR Downloader to fetch the 10-K filings based on provided CIK codes and years.
 
@@ -54,9 +54,9 @@ for index, row in cik_years.iloc[:].iterrows():
 print("Download completed.")
 
 
-2. Clean HTML Content:
+## 2. Clean HTML Content:
 
-After downloading the files, the script cleans the HTML content to remove unwanted tags and tables.
+## After downloading the files, the script cleans the HTML content to remove unwanted tags and tables.
 
 def clean_html_content(html_content):
     # Parse the HTML content
@@ -94,9 +94,9 @@ base_directory = 'sec-edgar-filings'
 process_files(base_directory)
 
 
-3. Count State Mentions:
+## 3. Count State Mentions:
 
-The script counts mentions of each U.S. state in the cleaned 10-K files and compiles the results into a CSV file.
+## The script counts mentions of each U.S. state in the cleaned 10-K files and compiles the results into a CSV file.
 
 import os
 import re
@@ -141,9 +141,9 @@ state_mentions_df.to_csv(output_file, index=False)
 print(f"State mentions counts have been saved to {output_file}")
 
 
-Notes
+## Notes
 
-Ensure that the paths specified in the script are correctly set to where your files are located.
-The script reads an Excel file containing CIK codes and years to fetch the corresponding 10-K filings.
-The output CSV file state_mentions_counts.csv contains the count of mentions for each state across different 10-K filings.
+### Ensure that the paths specified in the script are correctly set to where your files are located.
+### The script reads an Excel file containing CIK codes and years to fetch the corresponding 10-K filings.
+### The output CSV file state_mentions_counts.csv contains the count of mentions for each state across different 10-K filings.
 
