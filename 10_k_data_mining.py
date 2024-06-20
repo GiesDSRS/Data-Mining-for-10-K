@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """10-K_Data_mining.ipynb
-
+"""
 
 !pip install sec_edgar_downloader
 
