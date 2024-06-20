@@ -33,7 +33,7 @@ file_path = 'file path'  # Replace with the path to your Excel file
 df = pd.read_excel(file_path)
 cik_years = df[['cik_x', 'year']]
 
-for index, row in cik_years.iloc[601:700].iterrows():
+for index, row in cik_years.iloc[:].iterrows():
     try:
         cik_number = str(row['cik_x'])
         year = int(row['year'])
