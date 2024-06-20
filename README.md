@@ -153,4 +153,4 @@ print(f"State mentions counts have been saved to {output_file}")
 
 ## Contact
 
-For any issues or inquiries, please contact [your email address].
+For any issues or inquiries, please contact pratik.relekar@gmail.com.
